@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Codewithujjwaldilwaliya</title>
+</head>
+
+<body>
+  <script src="/script.js"></script>
+  <header>
+    <div class="container">
+      <h1>Ujjwal Dilwaliya</h1>
+      <p>Experienced Web Developer</p>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a passionate and experienced web developer with a love for creating innovative and efficient solutions. My journey in the world of web development has equipped me with a diverse skill set and a keen eye for detail.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>Frontend Development: HTML, CSS, JavaScript, Python</li>
+        <li>Backend Development: GoLang</li>
+        <li>Database: MySQL</li>
+        <li>DevOps: AWS</li>
+        <li>Version Control: Git</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-card" onclick="showProjectDetails('gocart')">
+        <h3>GoCart E-commerce</h3>
+        <p>Built with Go.</p>
+      </div>
+      <div class="project-card" onclick="showProjectDetails('pyinsights')">
+        <h3>PyInsights Dashboard</h3>
+        <p>Built using Python.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Let's collaborate on your next project! Reach out to me:</p>
+      <a href="mailto:masterdexterity2018@gmail.com" class="contact-button">Email Me</a>
+      <a href="https://www.instagram.com/ujjwal.dilwaliya/" class="contact-button"> DM Me!</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Ujjwal Dilwaliya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="project-modal" id="gocart-modal" style="display:none;">
+    <h3>GoCart E-commerce</h3>
+    <p>A high performance e-commerce platform showing product details.</p>
+    <button onclick="hideProjectDetails()">Close</button>
+  </div>
+
+  <div class="project-modal" id="pyinsights-modal" style="display:none;">
+    <h3>PyInsights Dashboard</h3>
+    <p>A real-time analytics dashboard using Python that sources data from leading analytics.</p>
+    <button onclick="hideProjectDetails()">Close</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
